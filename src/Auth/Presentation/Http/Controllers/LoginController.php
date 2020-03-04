@@ -26,6 +26,7 @@ class LoginController extends Controller
             $request->get('password')
         );
 
+        //TODO: implements command bus
         $response = $this->handler->handle($query);
 
         if ($response) {
