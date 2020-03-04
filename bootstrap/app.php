@@ -38,12 +38,12 @@ $app = new Laravel\Lumen\Application(
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-    Shared\Infrastructure\Exceptions\Handler::class
+    ArtishUp\Shared\Infrastructure\Exceptions\Handler::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
-    Shared\Presentation\Console\Kernel::class
+    ArtishUp\Shared\Presentation\Console\Kernel::class
 );
 
 /*

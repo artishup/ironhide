@@ -7,6 +7,6 @@ class AliveController extends Controller
 
     public function alive()
     {
-        return response('I am Optimus Prime, leader of the autobots.', 200);
+        return response('Why are we fighting to save the humans? They\'re a primitive and violent race.', 200);
     }
 }

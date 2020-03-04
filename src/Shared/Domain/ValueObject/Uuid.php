@@ -23,6 +23,11 @@ class Uuid
         return new static(RamseyUuid::uuid4()->toString());
     }
 
+    public static function fromString(string $uuid): self
+    {
+        return new static($uuid);
+    }
+
     public function value(): string
     {
         return $this->value;

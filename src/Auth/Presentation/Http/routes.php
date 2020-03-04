@@ -2,7 +2,7 @@
 
 /*
 |--------------------------------------------------------------------------
-| Auth Routes
+| Shared Routes
 |--------------------------------------------------------------------------
 |
 | Here is where you can register all of the routes for an application.
@@ -11,8 +11,8 @@
 |
 */
 
-$router->group(['namespace' => 'ArtishUp\Auth\Presentation\Http\Controllers'], function() use ($router) {
-    $router->get('login', 'LoginController');
+$router->group(['namespace' => 'ArtishUp\Shared\Presentation\Http\Controllers'], function() use ($router) {
+    $router->get('/', 'AliveController@alive');
 });
 
 
